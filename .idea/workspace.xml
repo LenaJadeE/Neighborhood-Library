@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="checkOut records the borrower's name and marks the book checked out. checkIn clears the name and returns the book to the shelf.">
-      <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

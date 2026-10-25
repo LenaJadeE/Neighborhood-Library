@@ -36,21 +36,21 @@ public class Book {
         @param isCheckedOut
         @param checkedOut
 
+    public Book(int ID, String ISBN, String title, String author, int publicationYear,
+                String edition, boolean isCheckedOut, String checkedOutTo) {
+        this.id = ID;
+        this.isbn = ISBN;
+        this.title = title;
+        this.author = author;
+        this.publicationYear = publicationYear;
+        this.edition = edition;
+        this.isCheckedOut = isCheckedOut;
+        this.checkedOutTo = checkedOutTo;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public int getId() {
+        return id;
+    }
 }
 // Requirements
 //   Create a Book class with appropriate getters, setters, constructors and methods.
