@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="" />
+    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/Book.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Neighborhood-Library" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LenaJadeE"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/LenaJadeE/Neighborhood-Library.git",
+    "accountId": "cfe63c81-7bdd-4cfc-a8e2-ad2598d2e8b1"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6,
   "fromUser": false
@@ -72,5 +87,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

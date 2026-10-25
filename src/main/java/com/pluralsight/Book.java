@@ -1,7 +1,18 @@
 package com.pluralsight;
 
 public class Book {
-    private
+    private int ID;
+    private String ISBN;
+    private String title;
+    private String author;
+    private int publicationYear;
+    private String edition;
+    private boolean isCheckedOut;
+    private String checkedOutTo;
+
+    @param
+
+
 }
 // Requirements
 //   Create a Book class with appropriate getters, setters, constructors and methods.
