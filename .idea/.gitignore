@@ -1,0 +1,10 @@
+# Default ignored files
+/../../Neighborhood-Library./.idea/shelf/
+/../../Neighborhood-Library./.idea/workspace.xml
+# Editor-based HTTP Client requests
+/../../Neighborhood-Library./.idea/httpRequests/
+# Ignored default folder with query files
+/../../Neighborhood-Library./.idea/queries/
+# Datasource local storage ignored files
+/../../Neighborhood-Library./.idea/dataSources/
+/../../Neighborhood-Library./.idea/dataSources.local.xml
