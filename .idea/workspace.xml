@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="">
+    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="checkOut records the borrower's name and marks the book checked out. checkIn clears the name and returns the book to the shelf.">
       <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/Book.java" afterDir="false" />
     </list>
@@ -22,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Neighborhood-Library" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
@@ -88,8 +89,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Add Book class with fields, constructors, and accessors&#10;Added id, ISBN, title, isCheckedOut, and checkedOutTo with getters, setters, and constructors." />
+    <MESSAGE value="checkOut records the borrower's name and marks the book checked out. checkIn clears the name and returns the book to the shelf." />
+    <option name="LAST_COMMIT_MESSAGE" value="checkOut records the borrower's name and marks the book checked out. checkIn clears the name and returns the book to the shelf." />
   </component>
 </project>

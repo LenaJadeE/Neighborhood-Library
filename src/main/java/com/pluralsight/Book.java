@@ -1,8 +1,8 @@
 package com.pluralsight;
 
 public class Book {
-    private int ID;
-    private String ISBN;
+    private int id;
+    private String isbn;
     private String title;
     private String author;
     private int publicationYear;
@@ -10,7 +10,45 @@ public class Book {
     private boolean isCheckedOut;
     private String checkedOutTo;
 
-    @param
+        @param ID
+        @param ISBN
+        @param title
+        @param author
+        @param publicationYear
+        @param edition
+
+    public Book(int ID, String ISBN, String title, String author, int publicationYear, String edition) {
+        this.id = ID;
+        this.isbn = ISBN;
+        this.title = title;
+        this.author = author;
+        this.publicationYear = publicationYear;
+        this.edition = edition;
+        this.isCheckedOut = false;
+        this.checkedOutTo = "";
+    }
+        @param ID
+        @param ISBN
+        @param title
+        @param author
+        @param publicationYear
+        @param edition
+        @param isCheckedOut
+        @param checkedOut
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
