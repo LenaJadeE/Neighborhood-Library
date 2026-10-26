@@ -96,7 +96,39 @@ public class NeighborhoodLibrary {
         Book book = findBook(input);
         if (book == null) {
             System.out.println("No book found with that Id.");
+        } else if (book.isCheckedOut()) {
+            System.out.println("Sorry, that book is already checked out.");
+        } else {
+            System.out.print("Enter your name: ");
+            String name = scanner.nextLine().trim();
+            if (name.isEmpty()) {
+                System.out.println("A name is required to check out a book.");
+            } else {
+                book.checkOut(name);
+                System.out.println("\"" + book.getTitle() + "\" is now checked out to " + name + ".");
+            }
         }
+    }
+
+    private static void showCheckedOutBooks() {
+        System.out.println();
+        System.out.println("Checked Out Books:");
+
+        int count = 0;
+        for (Book book : inventory) {
+            if (book.isCheckedOut()){
+                System.out.printf("Id: %-3d ISBN: %-14s Title: %-38s Author: %-20s Published: %-5d Edition: %-40s Checked out to: %s%n",
+                        book.getID(), displayISBN(book), book.getTitle(), book.getAuthor(),
+                        book.getPublicationYear(), book.getEdition(), book.getCheckedOutTo());
+                count++;
+            }
+        }
+
+        if (count == 0) {
+            System.out.println("No books are checked out right now.");
+
+        }
+
     }
 
 }
