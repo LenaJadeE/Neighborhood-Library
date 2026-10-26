@@ -10,13 +10,6 @@ public class Book {
     private boolean isCheckedOut;
     private String checkedOutTo;
 
-        @param ID
-        @param ISBN
-        @param title
-        @param author
-        @param publicationYear
-        @param edition
-
     public Book(int ID, String ISBN, String title, String author, int publicationYear, String edition) {
         this.id = ID;
         this.isbn = ISBN;
@@ -27,14 +20,6 @@ public class Book {
         this.isCheckedOut = false;
         this.checkedOutTo = "";
     }
-        @param ID
-        @param ISBN
-        @param title
-        @param author
-        @param publicationYear
-        @param edition
-        @param isCheckedOut
-        @param checkedOut
 
     public Book(int ID, String ISBN, String title, String author, int publicationYear,
                 String edition, boolean isCheckedOut, String checkedOutTo) {
@@ -48,8 +33,92 @@ public class Book {
         this.checkedOutTo = checkedOutTo;
     }
 
-    public int getId() {
+    public int getID() {
         return id;
+    }
+
+    public void setID(int id) {
+        this.id = id;
+    }
+
+    public String getISBN() {
+        return isbn;
+    }
+
+    public void setISBN(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public int getPublicationYear() {
+        return publicationYear;
+    }
+
+    public void setPublicationYear(int publicationYear) {
+        this.publicationYear = publicationYear;
+    }
+
+    public String getEdition() {
+        return edition;
+    }
+
+    public void setEdition(String edition) {
+        this.edition = edition;
+    }
+
+    public boolean isCheckedOut() {
+        return isCheckedOut;
+    }
+
+    public void setCheckedOut(boolean checkedOut) {
+        isCheckedOut = checkedOut;
+    }
+
+    public String getCheckedOutTo() {
+        return checkedOutTo;
+    }
+
+    public void setCheckedOut(String checkedOutTo) {
+        this.checkedOutTo = checkedOutTo;
+    }
+
+    public void checkOut (String name) {
+        setCheckedOutTo(name);
+        setCheckedOut(true);
+    }
+
+    public void checkIn() {
+        setCheckedOutTo("");
+        setCheckedOut(false);
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("ID: ").append(id);
+        sb.append(" | ISBN: ").append(isbn);
+        sb.append(" | Title: ").append(title);
+        sb.append(" | Author: ").append(author);
+        sb.append(" | Published: ").append(publicationYear);
+        sb.append(" | Edition: ").append(edition);
+        if (isCheckedOut) {
+            sb.append(" | Checked out to: ").append(checkedOutTo);
+        }
+        return sb.toString();
     }
 }
 // Requirements
