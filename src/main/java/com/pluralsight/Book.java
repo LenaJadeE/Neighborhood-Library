@@ -10,9 +10,9 @@ public class Book {
     private boolean isCheckedOut;
     private String checkedOutTo;
 
-    public Book(int ID, String ISBN, String title, String author, int publicationYear, String edition) {
-        this.id = ID;
-        this.isbn = ISBN;
+    public Book(int id, String isbn, String title, String author, int publicationYear, String edition) {
+        this.id = id;
+        this.isbn = isbn;
         this.title = title;
         this.author = author;
         this.publicationYear = publicationYear;
@@ -21,10 +21,10 @@ public class Book {
         this.checkedOutTo = "";
     }
 
-    public Book(int ID, String ISBN, String title, String author, int publicationYear,
+    public Book(int id, String isbn, String title, String author, int publicationYear,
                 String edition, boolean isCheckedOut, String checkedOutTo) {
-        this.id = ID;
-        this.isbn = ISBN;
+        this.id = id;
+        this.isbn = isbn;
         this.title = title;
         this.author = author;
         this.publicationYear = publicationYear;
@@ -93,7 +93,7 @@ public class Book {
         return checkedOutTo;
     }
 
-    public void setCheckedOut(String checkedOutTo) {
+    public void setCheckedOutTo(String checkedOutTo) {
         this.checkedOutTo = checkedOutTo;
     }
 

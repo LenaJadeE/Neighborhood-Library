@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="Reformat the code and Ignore Chase for the letter selection.">
+    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="Establish for if for finding the book in the system.">
       <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/NeighborhoodLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/NeighborhoodLibrary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,6 +132,7 @@
     <MESSAGE value="Establish if else Statements regarding the inventory availability." />
     <MESSAGE value="Establish if and for loops For the books that are checked out inventory." />
     <MESSAGE value="Reformat the code and Ignore Chase for the letter selection." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformat the code and Ignore Chase for the letter selection." />
+    <MESSAGE value="Establish for if for finding the book in the system." />
+    <option name="LAST_COMMIT_MESSAGE" value="Establish for if for finding the book in the system." />
   </component>
 </project>
