@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="Establish for if for finding the book in the system.">
+    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="Establish The sets for updating books in the system.">
       <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/NeighborhoodLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/NeighborhoodLibrary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,38 +24,38 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Neighborhood-Library" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "LenaJadeE"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LenaJadeE&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/LenaJadeE/Neighborhood-Library.git",
-    "accountId": "cfe63c81-7bdd-4cfc-a8e2-ad2598d2e8b1"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LenaJadeE/Neighborhood-Library.git&quot;,
+    &quot;accountId&quot;: &quot;cfe63c81-7bdd-4cfc-a8e2-ad2598d2e8b1&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6,
-  "fromUser": false
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3LCZxn3vynSWXAWj7e7NR3mXci7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.NeighborhoodLibrary.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.NeighborhoodLibrary.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="NeighborhoodLibrary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pluralsight.NeighborhoodLibrary" />
@@ -70,17 +69,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Neighborhood-Library" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Neighborhood-Library" />
-      <option name="filePath" />
-      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
@@ -133,6 +121,7 @@
     <MESSAGE value="Establish if and for loops For the books that are checked out inventory." />
     <MESSAGE value="Reformat the code and Ignore Chase for the letter selection." />
     <MESSAGE value="Establish for if for finding the book in the system." />
-    <option name="LAST_COMMIT_MESSAGE" value="Establish for if for finding the book in the system." />
+    <MESSAGE value="Establish The sets for updating books in the system." />
+    <option name="LAST_COMMIT_MESSAGE" value="Establish The sets for updating books in the system." />
   </component>
 </project>

@@ -23,7 +23,7 @@ public class NeighborhoodLibrary {
         inventory[6] = new Book(7, "9780316769174", "The Catcher in the Rye", "J.D. Salinger", 1951, "Little, Brown Edition");
         inventory[7] = new Book(8, "9780141040363", "Jane Eyre", "Charlotte Bronte", 1847, "Penguin Clothbound Classics Edition");
         inventory[8] = new Book(9, "9780060929871", "Brave New World", "Aldous Huxley", 1932, "Perennial Classics Edition");
-        inventory[9] = new Book(10, "9780060929871", "The Alchemist", "Paulo Coelho", 1988, "Alchemist Deluxe Edition");
+        inventory[9] = new Book(10, "9780060929872", "The Alchemist", "Paulo Coelho", 1988, "Alchemist Deluxe Edition");
         inventory[10] = new Book(11, "9780060263850", "Charlotte's Web", "E.B. White", 1952, "Harper & Row Edition");
         inventory[11] = new Book(12, "9780395645666", "The Giver", "Lois Lowry", 1993, "Houghton Mifflin Edition");
         inventory[12] = new Book(13, "9781503280786", "Moby Dick", "Herman Melville", 1851, "Moby-Dick Limited Edition");
@@ -65,9 +65,9 @@ public class NeighborhoodLibrary {
                     System.out.println("Thank you for using Neighborhood Library");
                     break;
                 default:
-                    System.out.println("Invalid choice. Please enter 1, 2,  or 3.");
+                    System.out.println("Invalid choice. Please enter 1, 2, 3 or 4.");
             }
-        } while (!choice.equals("3"));
+        } while (!choice.equals("4"));
     }
 
     private static void showAvailableBooks() {
@@ -132,10 +132,9 @@ public class NeighborhoodLibrary {
             return;
         }
 
-
         System.out.println();
         System.out.println(" C - Check In a book");
-        System.out.println(" x- Go back to home screen");
+        System.out.println(" x - Go back to home screen");
         System.out.print("Enter your choice: ");
         String choice = scanner.nextLine().trim();
 
@@ -147,7 +146,7 @@ public class NeighborhoodLibrary {
     }
 
     private static void checkInBook() {
-        System.out.print("Enter the ID of the book to check in:");
+        System.out.print("Enter the ID of the book to check in: ");
         String input = scanner.nextLine().trim();
 
         Book book = findBook(input);
@@ -165,61 +164,61 @@ public class NeighborhoodLibrary {
         System.out.print("Enter the ID of the book to update: ");
         Book book = findBook(scanner.nextLine().trim());
 
-        if (book == null) {
-            System.out.println("No book found with that ID.");
-        }
+        if (book != null) {
+            System.out.println("  1 - ID");
+            System.out.println("  2 - ISBN");
+            System.out.println("  3 - Title");
+            System.out.println("  4 - Author");
+            System.out.println("  5 - Publication Year");
+            System.out.println("  6 - Edition");
+            System.out.print("What would you like to change? ");
+            String field = scanner.nextLine().trim();
 
-        System.out.println("  1 - ID");
-        System.out.println("  2 - ISBN");
-        System.out.println("  3 - Title");
-        System.out.println("  4 - Author");
-        System.out.println("  5 - Publication Year");
-        System.out.println("  6 - Edition");
-        System.out.print("What would you like to change? ");
-        String field = scanner.nextLine().trim();
+            System.out.print("Enter the new value: ");
+            String value = scanner.nextLine().trim();
 
-        System.out.print("Enter the new value: ");
-        String value = scanner.nextLine().trim();
-
-        try {
-            switch (field) {
-                case "1":
-                    if (findBook(Integer.parseInt(value)) != null) {
-                        System.out.println("That ID is already in use.");
+            try {
+                switch (field) {
+                    case "1":
+                        if (findBook(Integer.parseInt(value)) != null) {
+                            System.out.println("That ID is already in use.");
+                            return;
+                        }
+                        book.setID(Integer.parseInt(value));
+                        break;
+                    case "2":
+                        book.setISBN(value);
+                        break;
+                    case "3":
+                        book.setTitle(value);
+                        break;
+                    case "4":
+                        book.setAuthor(value);
+                        break;
+                    case "5":
+                        book.setPublicationYear(Integer.parseInt(value));
+                        break;
+                    case "6":
+                        book.setEdition(value);
+                        break;
+                    default:
+                        System.out.println("Invalid choice.");
                         return;
-                    }
-                    book.setID(Integer.parseInt(value));
-                    break;
-                case "2":
-                    book.setISBN(value);
-                    break;
-                case "3":
-                    book.setTitle(value);
-                    break;
-                case "4":
-                    book.setAuthor(value);
-                    break;
-                case "5":
-                    book.setPublicationYear(Integer.parseInt(value));
-                    break;
-                case "6":
-                    book.setEdition(value);
-                    break;
-                default:
-                    System.out.println("Invalid choice.");
-                    return;
+                }
+                System.out.println("Book updated.");
+            } catch (NumberFormatException e) {
+                System.out.println("Please enter a number.");
             }
-            System.out.println("Book updated.");
-        } catch (NumberFormatException e) {
-            System.out.println("Please enter a number.");
+        } else {
+            System.out.println("No book found with that ID.");
         }
     }
 
-    private static Book findBook(int ID) {
+    private static Book findBook(int id) {
         Book found = null;
-        for (int i = 0; i < inventory.length; i++) {
-            if (inventory[i].getID() == ID) {
-                found = inventory[i];
+        for (Book book : inventory) {
+            if (book.getID() == id) {
+                found = book;
                 break;
             }
         }
@@ -236,7 +235,7 @@ public class NeighborhoodLibrary {
 
     private static String displayISBN(Book book) {
         if (book.getISBN().isEmpty()) {
-            return "pass";
+            return "pending";
         }
         return book.getISBN();
     }
