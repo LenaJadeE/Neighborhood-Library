@@ -67,5 +67,36 @@ public class NeighborhoodLibrary {
         } while (!choice.equals("3"));
     }
 
+    private static void showAvailableBooks() {
+        System.out.println();
+        System.out.println("Available Books:");
+
+        int count = 0;
+        for (Book book : inventory) {
+            if (!book.isCheckedOut()) {
+                System.out.printf("Id: %-3d ISBN: %-14s Title: %-38s Author: %-20s Published: %-5d Edition: %s%n",
+                        book.getID(), displayISBN(book), book.getTitle(), book.getAuthor(),
+                        book.getPublicationYear(), book.getEdition());
+                count++;
+            }
+        }
+        if (count == 0) {
+            System.out.println("There are no books available right now.");
+            return;
+        }
+
+        System.out.println();
+        System.out.print("Enter the Id of the book to check out, or X to go back: ");
+        String input = scanner.nextLine().trim();
+
+        if (input.equalsIgnoreCase("x")) {
+            return;
+        }
+
+        Book book = findBook(input);
+        if (book == null) {
+            System.out.println("No book found with that Id.");
+        }
+    }
 
 }

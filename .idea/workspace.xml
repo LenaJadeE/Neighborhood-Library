@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="Establish a 20 book inventory">
+    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="Establish a switch To show if a book is available or checked out.">
       <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/NeighborhoodLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/NeighborhoodLibrary.java" afterDir="false" />
     </list>
@@ -108,6 +108,7 @@
     <MESSAGE value="Establish all the set and String builder parameters." />
     <MESSAGE value="Establish Book inventory and the scanner system." />
     <MESSAGE value="Establish a 20 book inventory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Establish a 20 book inventory" />
+    <MESSAGE value="Establish a switch To show if a book is available or checked out." />
+    <option name="LAST_COMMIT_MESSAGE" value="Establish a switch To show if a book is available or checked out." />
   </component>
 </project>
