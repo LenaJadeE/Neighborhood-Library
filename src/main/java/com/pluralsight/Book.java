@@ -97,7 +97,7 @@ public class Book {
         this.checkedOutTo = checkedOutTo;
     }
 
-    public void checkOut (String name) {
+    public void checkOut(String name) {
         setCheckedOutTo(name);
         setCheckedOut(true);
     }

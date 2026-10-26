@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="Establish if else Statements regarding the inventory availability.">
+    <list default="true" id="ee017c32-927c-4c3d-8760-03c54cd75f20" name="Changes" comment="Establish if and for loops For the books that are checked out inventory.">
       <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/NeighborhoodLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighborhood-Library/src/main/java/com/pluralsight/NeighborhoodLibrary.java" afterDir="false" />
     </list>
@@ -47,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.NeighborhoodLibrary.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
@@ -56,6 +57,19 @@
   }
 }]]></component>
   <component name="RunManager">
+    <configuration name="NeighborhoodLibrary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.NeighborhoodLibrary" />
+      <module name="Neighborhood-Library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pluralsight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Neighborhood-Library" />
       <method v="2">
@@ -67,6 +81,11 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NeighborhoodLibrary" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -110,6 +129,7 @@
     <MESSAGE value="Establish a 20 book inventory" />
     <MESSAGE value="Establish a switch To show if a book is available or checked out." />
     <MESSAGE value="Establish if else Statements regarding the inventory availability." />
-    <option name="LAST_COMMIT_MESSAGE" value="Establish if else Statements regarding the inventory availability." />
+    <MESSAGE value="Establish if and for loops For the books that are checked out inventory." />
+    <option name="LAST_COMMIT_MESSAGE" value="Establish if and for loops For the books that are checked out inventory." />
   </component>
 </project>

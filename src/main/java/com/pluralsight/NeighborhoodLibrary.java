@@ -8,12 +8,12 @@ public class NeighborhoodLibrary {
     private static final Book[] inventory = new Book[INVENTORY_SIZE];
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static  void main(String[] args) {
+    public static void main(String[] args) {
         loadInventory();
         showHomeScreen();
     }
 
-    private static void loadInventory {
+    private static void loadInventory() {
         inventory[0] = new Book(1, "9780063473324", "To Kill a Mockingbird", "Harper Lee", 1960, "HarperCollins Deluxe Collector's Edition");
         inventory[1] = new Book(2, "9780151660346", "1984", "George Orwell", 1949, "Harcourt Edition");
         inventory[2] = new Book(3, "9780743273565", "The Great Gatsby", "F. Scott Fitzgerald", 1925, "First Edition");
@@ -116,7 +116,7 @@ public class NeighborhoodLibrary {
 
         int count = 0;
         for (Book book : inventory) {
-            if (book.isCheckedOut()){
+            if (book.isCheckedOut()) {
                 System.out.printf("Id: %-3d ISBN: %-14s Title: %-38s Author: %-20s Published: %-5d Edition: %-40s Checked out to: %s%n",
                         book.getID(), displayISBN(book), book.getTitle(), book.getAuthor(),
                         book.getPublicationYear(), book.getEdition(), book.getCheckedOutTo());
@@ -126,9 +126,21 @@ public class NeighborhoodLibrary {
 
         if (count == 0) {
             System.out.println("No books are checked out right now.");
-
+            return;
         }
 
+        System.out.println();
+        System.out.println(" C - Check In a book");
+        System.out.println(" x- Go back to home screen");
+        System.out.print("Enter your choice: ");
+        String choice = scanner.nextLine().trim();
+
+        if (choice.equalsIgnoreCase("c")) {
+            checkInBook();
+        } else if (!choice.equalsIgnoreCase("x")) {
+            System.out.println("Invalid choice. Returning to the home screen.");
+        }
     }
+
 
 }
