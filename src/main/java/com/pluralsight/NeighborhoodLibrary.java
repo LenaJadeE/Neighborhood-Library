@@ -36,4 +36,36 @@ public class NeighborhoodLibrary {
         inventory[19] = new Book(20, "9780374386139", "A Wrinkle in Time", "Madeleine L'Engle", 1962, "Farrar, Straus and Giroux Edition");
 
     }
+
+    private static void showHomeScreen() {
+        String choice;
+
+        do {
+            System.out.println();
+            System.out.println("Welcome to Neighborhood Library");
+            System.out.println("What would you like to do?");
+            System.out.println("  1 - Show Available Books");
+            System.out.println("  2 - Show Checked Out Books");
+            System.out.println("  3 - Exit");
+            System.out.print("Enter your choice: ");
+
+            choice = scanner.nextLine().trim();
+
+            switch (choice) {
+                case "1":
+                    showAvailableBooks();
+                    break;
+                case "2":
+                    showCheckedOutBooks();
+                    break;
+                case "3":
+                    System.out.println("Thank you for using Neighborhood Library");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please enter 1, 2,  or 3.");
+            }
+        } while (!choice.equals("3"));
+    }
+
+
 }
