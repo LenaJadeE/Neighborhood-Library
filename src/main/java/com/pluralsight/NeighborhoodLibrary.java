@@ -142,5 +142,34 @@ public class NeighborhoodLibrary {
         }
     }
 
+    private static void checkInBook() {
+        System.out.print("Enter the Id of the book to check in:");
+        String input = scanner.nextLine().trim();
+
+        Book book = findBook(input);
+        if (book == null) {
+            System.out.println("No book found with that Id.");
+        } else if (!book.isCheckedOut()) {
+            System.out.println("That book is not checked out.");
+
+        } else {
+            book.checkIn();
+            System.out.println("\"" + book.getTitle() + "\" has been checked in. Thank you!");
+        }
+    }
+
+    private static Book findBook(int ID) {
+        Book found = null;
+        for (int i = 0; i < inventory.length; i++) {
+            if (inventory[i].getID() == ID) {
+                found = inventory[i];
+                break;
+            }
+        }
+        return found;
+    }
+
+
+
 
 }
